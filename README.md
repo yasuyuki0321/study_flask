@@ -20,7 +20,7 @@ git remote set-url origin {new-url}
 git remote -v
 ```
 
-### initialize git repository
+### initialize the repository
 
 ```sh
 git remote -v
@@ -30,4 +30,6 @@ git init
 git add .
 git commit -m "初期登録"
 git remote add origin {remote-url}
+
+git push -f origin master
 ```
