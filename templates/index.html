@@ -7,7 +7,18 @@
 </head>
 
 <body>
-  <h1>Hello {{user}}</h1>
+  <table>
+    <tr>
+      <th></th>
+      <th></th>
+    </tr>
+    {% for item in list %}
+    <tr>
+      <td>{{ item.name }}</td>
+      <td>{{ item.value }}</td>
+    </tr>
+    {% endfor %}
+  </table>
 </body>
 
 </html>
