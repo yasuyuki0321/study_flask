@@ -1,24 +1,19 @@
-<!DOCTYPE html>
-<html lang="ja">
+{% extends "theme.html" %}
 
-<head>
-  <meta charset="UTF-8">
-  <title>index.html</title>
-</head>
+{% block title %}Hello Workd{% endblock %}
 
-<body>
-  <table>
-    <tr>
-      <th></th>
-      <th></th>
-    </tr>
-    {% for item in list %}
-    <tr>
-      <td>{{ item.name }}</td>
-      <td>{{ item.value }}</td>
-    </tr>
-    {% endfor %}
-  </table>
-</body>
+{% block head %}
+{{ super() }}
 
-</html>
+{% endblock %}
+
+{% block content %}
+<div class="jumbotron">
+  <div class="container">
+    <h1>Hello World</h1>
+    <p>Hoge Fuga foo</p>
+    <img src="https://abc-c.co.jp/wp-content/themes/abc/images/logo_abc.svg" class="img-thuumbnail" width="200"
+      height="100" alt="sample image" />
+  </div>
+</div>
+{% endblock %}

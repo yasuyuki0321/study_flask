@@ -6,14 +6,7 @@ app = Flask(__name__)
 
 @app.route("/", methods=["GET"])
 def index():
-    return render_template(
-        "index.html",
-        list=[
-            {"name": "hoge", "value": "one"},
-            {"name": "fuga", "value": "two"},
-            {"name": "foo", "value": "three"}
-        ],
-    )
+    return render_template("index.html", brand_name="ABC株式会社")
 
 
 @app.route("/login", methods=["GET"])
