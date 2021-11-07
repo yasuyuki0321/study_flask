@@ -1,6 +1,6 @@
 {% extends "theme.html" %}
 
-{% block title %}Hello Workd{% endblock %}
+{% block title %}Top Page{% endblock %}
 
 {% block head %}
 {{ super() }}
@@ -9,11 +9,56 @@
 
 {% block content %}
 <div class="jumbotron">
-  <div class="container">
-    <h1>Hello World</h1>
-    <p>Hoge Fuga foo</p>
-    <img src="https://abc-c.co.jp/wp-content/themes/abc/images/logo_abc.svg" class="img-thuumbnail" width="200"
-      height="100" alt="sample image" />
+  <div class="row">
+    <!-- プロフィール -->
+    <div class="col-12 col-sm-8 col-md-8 col-lg-8">
+      <h1>Theme example</h1>
+      <p>This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as as starting point
+        to create something more unique by building on or modifyiing it.</p>
+    </div>
+    <!-- プロフィール写真 -->
+    <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+      <img src="https://www.jbs.co.jp/-/media/Images/jbs/solution/maker448/aws.png" class="img-thuumbnail" width="200"
+        alt="test image" />
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-2 col-sm-1 col-md-1 col-lg-1">
+      <img class="img-thumbnail"
+        src="https://4.bp.blogspot.com/-xN3OofpDu2A/XAnvN3Vpj-I/AAAAAAABQmA/guSSixGZ6cYFey2lgEUnc5q3mEUj6quOACLcBGAs/s800/business_man1_1_smile.png" />
+    </div>
+    <div class="col-10 col-sm-11 col-md-11 col-lg-11">
+      <div class="card center">
+        <div class="card-body">
+          <p class="card-text">質問や回答をいれるための箱です。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="margin-top: 20px">
+    <div class="col-12" <form action="/answer" method="POST">
+      <div class="form-group">
+        <textarea class="form-control" id="textarea" rows="3"></textarea>
+        <button class="btn btn-primary" type="submit">送信する</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="margin-top: 20px">
+    <div class="col-1 col-sm-1 col-md-1 col-lg-1">
+      <i class="fas fa-arrow-up"></i>
+    </div>
+    <div class="col-2 col-sm-1 col-md-1 col-lg-1">
+      <img class="img-thumbnail"
+        src="https://4.bp.blogspot.com/-xN3OofpDu2A/XAnvN3Vpj-I/AAAAAAABQmA/guSSixGZ6cYFey2lgEUnc5q3mEUj6quOACLcBGAs/s800/business_man1_1_smile.png" />
+    </div>
+    <div class="col-9 col-sm-10 col-md-10 col-lg-10">
+      <div class="card text-center">
+        <p class="card-text">質問や回答をいれるための箱です。</p>
+      </div>
+    </div>
   </div>
 </div>
 {% endblock %}
